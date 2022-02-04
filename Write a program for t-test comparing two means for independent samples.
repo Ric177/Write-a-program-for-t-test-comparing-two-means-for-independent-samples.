@@ -1,0 +1,17 @@
+Experimental Data 
+
+To calculate Standard Mean go to cell A22 and type =SUM(A2:A21)/20 
+To calculate Standard Deviation go to cell A23 and type =STDEV(A2:A21) 
+
+Comparison Data 
+To calculate Standard Mean go to cell B22 and type =SUM(B2:B21)/20  
+  To calculate Standard Deviation go to cell B23 and type =STDEV(B2:B21)  
+
+  To caluculate the T-Test square value go to cell E20 and type =(A22-B22)/SQRT((A23*A23)/COUNT(A2:A21)+(B23*B23)/COUNT(A2:A21))
+
+  Now go to cell E20 and type
+=IF(E20<E12,"H0 is Accepted", "H0 is Rejected and H1 is Accepted")
+
+ 
+
+Our calculated value is larger than the tabled value at alpha = .01, so we reject the null     hypothesis and accept the alternative hypothesis, namely, that the difference in gain scores is likely the result of the experimental treatment and not the result of chance variation.
